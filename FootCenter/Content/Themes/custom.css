@@ -5,12 +5,12 @@
  */
 
 body {
-  font-family: "Open Sans", Helvetica, Arial, sans-serif;
-  background: url("http://www.publicdomainpictures.net/pictures/20000/velka/fresh-spring-background.jpg") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
+	font-family: "Open Sans", Helvetica, Arial, sans-serif;
+	background: url("http://www.publicdomainpictures.net/pictures/20000/velka/fresh-spring-background.jpg") no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	background-size: cover;
+	-o-background-size: cover;
 }
 
 h1, h2, h3, h4, h5, h6, .text-heading {

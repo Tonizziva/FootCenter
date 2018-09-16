@@ -50,10 +50,12 @@
 	<div class="container body-content">
 		@RenderBody()
 		<hr />
-		<footer>
-			<p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-		</footer>
 	</div>
+	<footer class="bg-faded text-center py-5">
+			<div class="container">
+				<p class="m-0">Copyright &copy; @DateTime.Now.Year - Toni Mäkelä</p>
+			</div>
+		</footer>
 
 	@Scripts.Render("~/bundles/jquery")
 	@Scripts.Render("~/bundles/bootstrap")
