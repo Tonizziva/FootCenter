@@ -13,6 +13,23 @@
 	@Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
+	<style>
+		p, a {
+			font-size: 1.7rem;
+		}
+
+		body, .form-control, .btn {
+			font-size: 1.3rem;
+		}
+
+		.text-lg {
+			font-size: 1.7rem;
+		}
+
+		.tagline-upper {
+			font-size: 7rem;
+		}
+	</style>
 
 	<div class="tagline-upper text-center text-heading text-shadow text-black mt-5 d-none d-lg-block">Foot Center</div>
 	<div class="tagline-lower text-center text-expanded text-shadow text-uppercase text-black mb-5 d-none d-lg-block">Ratapihantie 13 | Helsinki | 012 345 6789</div>
@@ -26,22 +43,11 @@
 			</button>
 			<div class="collapse navbar-collapse" id="navbarResponsive">
 				<ul class="navbar-nav mx-auto">
-					<li class="nav-item active px-lg-4">
-						<a class="nav-link text-uppercase text-expanded" href="index.html">
-							Etusivu
-							<span class="sr-only">(nykyinen)</span>
-						</a>
-					</li>
-					<li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-					<li class="nav-item px-lg-4">
-						<a class="nav-link text-uppercase text-expanded" href="varaa.html">Varaa aika</a>
-					</li>
-					<li class="nav-item px-lg-4">
-						<a class="nav-link text-uppercase text-expanded" href="info.html">tietoa meistä</a>
-					</li>
-					<li class="nav-item px-lg-4">
-						<a class="nav-link text-uppercase text-expanded" href="contact.html">Contact</a>
-					</li>
+					<li class="nav-item px-lg-4">@Html.ActionLink("Etusivu", "Index", "Home", new object { }, new { @class = "nav-link text-uppercase text-expanded" })</li>
+					<li class="nav-item px-lg-4">@Html.ActionLink("Asiakkaat", "Index", "Asiakkaat", new object { }, new { @class = "nav-link text-uppercase text-expanded" })</li>
+					<li class="nav-item px-lg-4">@Html.ActionLink("Varaa aika", "Index", "Ajanvaraus", new object { }, new { @class = "nav-link text-uppercase text-expanded" })</li>
+					<li class="nav-item px-lg-4">@Html.ActionLink("Tietoa meistä", "About", "Home", new object { }, new { @class = "nav-link text-uppercase text-expanded" })</li>
+					<li class="nav-item px-lg-4">@Html.ActionLink("Ota yhteyttä", "Contact", "Home", new object { }, new { @class = "nav-link text-uppercase text-expanded" })</li>
 				</ul>
 			</div>
 		</div>
@@ -52,10 +58,10 @@
 		<hr />
 	</div>
 	<footer class="bg-faded text-center py-5">
-			<div class="container">
-				<p class="m-0">Copyright &copy; @DateTime.Now.Year - Toni Mäkelä</p>
-			</div>
-		</footer>
+		<div class="container">
+			<p class="m-0">Copyright &copy; @DateTime.Now.Year - Toni Mäkelä</p>
+		</div>
+	</footer>
 
 	@Scripts.Render("~/bundles/jquery")
 	@Scripts.Render("~/bundles/bootstrap")

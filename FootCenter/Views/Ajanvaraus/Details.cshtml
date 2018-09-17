@@ -1,0 +1,43 @@
+﻿@model FootCenter.Models.Ajanvaraus
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Ajanvaraus</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.AsiakasID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.AsiakasID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.TyontekijaID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.TyontekijaID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.pvm)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.pvm)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.VarausID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

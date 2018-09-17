@@ -1,0 +1,67 @@
+﻿@model FootCenter.Models.Asiakas
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Asiakas</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Sukunimi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sukunimi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Etunimi)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Etunimi)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Postiosoite)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Postiosoite)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Postitmp)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Postitmp)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Puhnro)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Puhnro)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Sposti)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Sposti)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.AsiakasID }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
